@@ -8,6 +8,21 @@ package logica;
  *
  * @author Gennaro Rodriguez
  */
-public class Usuario {
-
+public abstract class Usuario {
+	private String nombre;
+	private String nickname;
+	private String password;
+	
+	public Usuario(String nombre, String nickname, String password) {
+		this.nombre = nombre;
+		this.nickname = nickname;
+		this.password = password;
+	}
+	
+	public String getNombre() {
+		return this.nombre;
+	}
+	
 }
+
+

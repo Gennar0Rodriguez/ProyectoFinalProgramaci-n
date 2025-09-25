@@ -4,10 +4,25 @@
  */
 package logica;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Gennaro Rodriguez
  */
-public class Cantante {
+public class Cantante extends Usuario {
+    private int cantOyentes;
+    private int cantCanciones;
+    private Banda banda;
+    private List<Cancion> canciones;
     
+    public Cantante(String nombre, String nickname, String password, int cantOyentes, int cantCanciones) {
+    	super(nombre, nickname, password);
+    	this.cantCanciones = cantCanciones;
+    	this.cantOyentes = cantOyentes;
+    	this.banda = null;
+    	this.canciones = new ArrayList<Cancion>();
+    }
 }
+    
